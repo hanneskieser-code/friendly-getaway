@@ -40,7 +40,8 @@ const Index = () => {
                 Welcome to <span className="font-medium">TL;DR</span>
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto">
-                Hi, I'm TL;DR. I've memorized the fine print so you can actually get back to work. 
+                Hi, I'm TL;DR. I've memorized the fine print so you can actually get back to work.
+                <br /><br />
                 Ask me anything about our directives or compliance guidelines and I'll give you 
                 the answer in plain English (or any other language you prefer).
               </p>
@@ -76,7 +77,7 @@ const Index = () => {
                 type="text"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Ask me anything about policies or guidelines..."
+                placeholder="Ask me anything about TWINT's policies or guidelines..."
                 className="w-full px-6 py-4 pr-14 text-foreground bg-background border border-border rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all placeholder:text-muted-foreground"
               />
               <button
