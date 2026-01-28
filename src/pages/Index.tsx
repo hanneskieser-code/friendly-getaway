@@ -41,7 +41,7 @@ const Index = () => {
               </h1>
               <p className="text-muted-foreground text-lg leading-relaxed max-w-xl mx-auto">
                 Hi, I'm TL;DR. I've memorized the fine print so you can actually get back to work. 
-                Ask me anything about our directives or compliance guidelines and I'll give you 
+                Ask me anything about our policies or directives and I'll give you 
                 the answer in plain English (or any other language you prefer).
               </p>
             </div>
