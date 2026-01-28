@@ -21,17 +21,17 @@ const Index = () => {
     <div className="min-h-screen bg-background flex flex-col">
       {/* Header with logo */}
       <header className="w-full py-6 px-8">
-        <div className="bg-black rounded-lg p-3 inline-block">
+        <div className="bg-black rounded-xl p-4 inline-block">
           <img 
             src={twintLogo} 
             alt="TWINT" 
-            className="h-10 w-auto"
+            className="h-16 w-auto"
           />
         </div>
       </header>
 
       {/* Main content */}
-      <main className="flex-1 flex flex-col items-center justify-center px-6 pb-24">
+      <main className="flex-1 flex flex-col items-center justify-center px-6 pb-8">
         <div className="w-full max-w-2xl space-y-8">
           {/* Title and intro */}
           {messages.length === 0 && (
@@ -90,6 +90,18 @@ const Index = () => {
           </form>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="w-full py-6 px-8">
+        <p className="text-center text-xs text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          TL;DR can make mistakes so double-check the answers by reviewing the source. 
+          In case of any issues, please reach out to{" "}
+          <a href="mailto:legalcompliance@twint.ch" className="underline hover:text-foreground transition-colors">
+            legalcompliance@twint.ch
+          </a>
+          . For quality control, answers and questions are recorded and may be reviewed by humans.
+        </p>
+      </footer>
     </div>
   );
 };
