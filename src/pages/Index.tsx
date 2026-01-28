@@ -21,11 +21,13 @@ const Index = () => {
     <div className="min-h-screen bg-background flex flex-col">
       {/* Header with logo */}
       <header className="w-full py-6 px-8">
-        <img 
-          src={twintLogo} 
-          alt="TWINT" 
-          className="h-12 w-auto"
-        />
+        <div className="bg-black rounded-lg p-3 inline-block">
+          <img 
+            src={twintLogo} 
+            alt="TWINT" 
+            className="h-10 w-auto"
+          />
+        </div>
       </header>
 
       {/* Main content */}
