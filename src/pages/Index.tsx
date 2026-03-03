@@ -44,6 +44,29 @@ const Index = () => {
                 Ask me anything about our policies or directives and I'll give you 
                 the answer in plain English (or any other language you prefer).
               </p>
+
+              {/* Search History */}
+              <div className="mt-8 text-left max-w-md mx-auto">
+                <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-3">
+                  Recent conversations
+                </h2>
+                <ul className="space-y-2">
+                  {[
+                    { id: "1", title: "What is TWINT's data retention policy?" },
+                    { id: "2", title: "How do I handle a customer complaint under the new directive?" },
+                    { id: "3", title: "Summary of the anti-fraud guidelines" },
+                  ].map((item) => (
+                    <li key={item.id}>
+                      <button
+                        className="w-full text-left px-4 py-3 rounded-xl border border-border hover:bg-muted transition-colors text-sm text-foreground truncate"
+                        onClick={() => {/* TODO: navigate to chat */}}
+                      >
+                        {item.title}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           )}
 
