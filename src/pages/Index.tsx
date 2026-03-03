@@ -34,7 +34,7 @@ const Index = () => {
       <main className="flex-1 flex px-6 pb-8">
         {/* Left sidebar - Search History */}
         {messages.length === 0 && (
-          <aside className="w-64 shrink-0 pt-8 pr-6">
+          <aside className="w-64 shrink-0 pr-6 flex items-center">
             <div className="border border-border rounded-xl p-4">
               <h2 className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-3">
                 Recent conversations
