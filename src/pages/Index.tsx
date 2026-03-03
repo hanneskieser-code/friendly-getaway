@@ -47,7 +47,7 @@ const Index = () => {
                 ].map((item) => (
                   <li key={item.id}>
                     <button
-                      className="w-full text-left px-3 py-2 rounded-lg hover:bg-muted transition-colors text-sm text-foreground line-clamp-2"
+                      className="w-full text-left px-3 py-2 rounded-lg hover:bg-muted transition-colors text-sm text-foreground"
                       onClick={() => {/* TODO: navigate to chat */}}
                     >
                       {item.title}
